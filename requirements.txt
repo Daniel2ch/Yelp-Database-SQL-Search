@@ -1,0 +1,3 @@
+psycopg2
+PyQt5
+python-dotenv

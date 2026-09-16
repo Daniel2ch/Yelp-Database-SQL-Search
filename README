@@ -1,0 +1,62 @@
+# Yelp Database SQL Search Application
+
+## Author
+
+Daniel Chavez
+
+## Overview
+
+This project is a PostgreSQL-backed desktop application built with PyQt5 that allows users to explore Yelp business data using dynamic SQL queries and an interactive graphical interface.
+
+The application parses Yelp JSON datasets into relational tables and allows filtering by state, city, zipcode, category, and business name.
+
+## Features
+
+* JSON → SQL relational database parser
+* PostgreSQL backend
+* PyQt5 graphical interface
+* Dynamic business search
+* Category filtering
+* Popular and successful business analysis
+* Zipcode demographic data display
+
+## Technologies Used
+
+* Python
+* PostgreSQL
+* PyQt5
+* SQL
+* JSON
+
+## Setup Instructions
+
+Download Yelp JSON data from my google drive: https://drive.google.com/drive/folders/1NP2LaAD7J665SzpjdB9zKs5rc05w8TBn?usp=drive_link
+Place them inside the root folder: YelpDatabase_SQLSearch\
+
+### 1. Install PostgreSQL
+
+Create database:
+
+createdb app
+
+### 2. Install dependencies
+
+pip install -r requirements.txt
+
+### 3. Configure database
+
+Copy example config:
+
+cp .env.example .env
+
+Edit .env with your PostgreSQL credentials.
+
+### 4. Run parser
+
+python appParser.py
+
+This generates insert SQL files.
+
+### 5. Run application
+
+python app.py
