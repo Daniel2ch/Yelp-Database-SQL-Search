@@ -37,7 +37,7 @@ Place them inside the root folder: YelpDatabase_SQLSearch\
 
 Create database:
 
-createdb app
+createdb -U postgres app
 
 ### 2. Install dependencies
 
